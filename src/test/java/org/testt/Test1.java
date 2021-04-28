@@ -25,16 +25,16 @@ public class Test1 {
 	private void tc19() {
 		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
 	}
-	@Test
-	private void tc14() {
-	System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
-	}
-	@Test
-	private void tc16() {
-		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
-	}
-	@Test
-	private void tc17() {
-		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
-	}
+//	@Test
+//	private void tc14() {
+//	System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
+//	}
+//	@Test
+//	private void tc16() {
+//		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
+//	}
+//	@Test
+//	private void tc17() {
+//		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
+//	}
 }
