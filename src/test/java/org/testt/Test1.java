@@ -13,4 +13,16 @@ public class Test1 {
 	private void tc12() {
 		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
 	}
+	@Test
+	private void tc15() {
+	System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
+	}
+	@Test
+	private void tc18() {
+		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
+	}
+	@Test
+	private void tc19() {
+		System.out.println("Test 1 Thread count:"+Thread.currentThread().getId());
+	}
 }
