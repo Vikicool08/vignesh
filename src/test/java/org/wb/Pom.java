@@ -1,0 +1,55 @@
+package org.wb;
+import org.fb.Base;
+import org.openqa.selenium.WebElement;
+public class Pom extends Base {
+public static void main(String[] args) {
+	getDriver();
+	launchUrl("https://adactinhotelapp.com/");
+	LoginPage loginpage = new LoginPage();
+	WebElement txtUserName = loginpage.getTxtUserName();
+	enterText(txtUserName, "karthi007");
+	WebElement txtPassword = loginpage.getTxtPassword();
+	enterText(txtPassword, "Karthi@1989");
+	WebElement btnLogin = loginpage.getBtnLogin();
+	btnClick(btnLogin);
+	Sign s = new Sign();
+	WebElement btnUser = s.getBtnUser();
+	btnClick(btnUser);
+	visibleText(btnUser, "Sydney");
+	WebElement btnHotel = s.getBtnHotel();
+	btnClick(btnHotel);
+	visibleText(btnHotel, "Hotel Creek");
+	WebElement btnRoom = s.getBtnRoom();
+	btnClick(btnRoom);
+	visibleText(btnRoom, "Standard");
+	WebElement btnSub = s.getBtnSub();
+	btnClick(btnSub);
+	Search d = new Search();
+	WebElement btnRadio = d.getBtnRadio();
+	btnClick(btnRadio);
+	WebElement btnClk = d.getBtnClk();
+	btnClick(btnClk);
+	SignUp u = new SignUp();
+	WebElement txtFirstUser = u.getTxtFirstUser();
+	enterText(txtFirstUser, "Vignesh");
+	WebElement txtLastUser = u.getTxtLastUser();
+	enterText(txtLastUser, "viki");
+	WebElement txtAdd = u.getTxtAdd();
+	enterText(txtAdd, "Chennai");
+	WebElement txtCard = u.getTxtCard();
+	enterText(txtCard, "9876543211234567");
+	WebElement btnCard = u.getBtnCard();
+	btnClick(btnCard);
+	visibleText(btnCard, "American Express");
+	WebElement btnmon = u.getBtnmon();
+	btnClick(btnmon);
+	visibleText(btnmon, "April");
+	WebElement btnYear = u.getBtnYear();
+	btnClick(btnYear);
+	visibleText(btnYear, "2021");
+	WebElement btnCv = u.getBtnCv();
+	enterText(btnCv, "345");
+	WebElement btnBook = u.getBtnBook();
+	btnClick(btnBook);	
+}
+}
